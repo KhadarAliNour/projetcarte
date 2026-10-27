@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #eaf3fb;
+    color: #222222;
+}
+
+.carte {
+    max-width: 720px;
+    margin: 30px auto;
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #d5dce5;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #174a8b;
+    text-align: center;
+}
+
+h2 {
+    color: #2f5597;
+}
+
+.sous-titre {
+    text-align: center;
+    color: #555555;
+}
+
+p {
+    line-height: 1.6;
+}
