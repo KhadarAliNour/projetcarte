@@ -1,3 +1,4 @@
+/* Style global de la page */
 body {
     margin: 0;
     padding: 20px;
@@ -6,6 +7,7 @@ body {
     color: #222222;
 }
 
+/* Style de la carte principale (<main>) */
 .carte {
     max-width: 720px;
     margin: 30px auto;
@@ -16,6 +18,7 @@ body {
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
+/* Titres */
 h1 {
     color: #174a8b;
     text-align: center;
@@ -32,4 +35,53 @@ h2 {
 
 p {
     line-height: 1.6;
+}
+
+/* Organisation des boîtes avec Flexbox */
+.conteneur {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.boite {
+    background-color: #e1efff;
+    padding: 15px 22px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Style du bouton */
+button {
+    margin-top: 15px;
+    background-color: #174a8b;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol de la souris */
+button:hover {
+    background-color: #0d315e;
+}
+
+/* Adaptation pour les téléphones (Responsive) */
+@media (max-width: 600px) {
+    .carte {
+        margin: 10px auto;
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .conteneur {
+        flex-direction: column;
+    }
 }
